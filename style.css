@@ -1,0 +1,127 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('background.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    margin: 0;
+    filter: drop-shadow(5px 5px 5px #222);
+}
+
+#clock {
+    position: relative;
+    margin: auto;
+    height: 314px;
+    width: 314px;
+    background: #85acc3;
+    background-size: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0 0 15px #c0a348;
+}
+
+#hour,#minute,#second {
+    position: absolute;
+    border-radius: 10px;
+    transform-origin: bottom;
+    background: red;
+}
+
+#hour {
+    width: 1.8%;
+    height: 25%;
+    top: 25%;
+    left: 48.85%;
+    z-index: 4;
+}
+
+#hour img{
+    position: relative;
+    left: -30px;
+    bottom: 45px;
+    width: 1%;
+    object-fit: cover;
+    width: 60px;
+    filter: drop-shadow(5px 5px 5px #222);
+}
+
+#minute {
+    width: 1.6%;
+    height: 30%;
+    top: 19%;
+    left: 48.9%;
+    z-index: 3;
+}
+
+#minute img{
+    position: relative;
+    left: -30px;
+    bottom: 55px;
+    object-fit: cover;
+    width: 60px;
+    filter: drop-shadow(5px 5px 5px #222);
+}
+
+ 
+#second {
+    width: 1%;
+    height: 40%;
+    top: 9%;
+    left: 49.25%;
+    z-index: 2;
+}
+
+#second img{
+    position: relative;
+    left: -30px;
+    bottom: 25px;
+    object-fit: cover;
+    width: 60px;
+    filter: drop-shadow(5px 5px 5px #222);
+}
+
+#zero, #three, #six, #nine{
+    position: absolute;
+}
+
+#zero img{
+    object-fit: cover;
+    width: 150px;
+}
+
+#three img{
+    object-fit: cover;
+    width: 140px;
+}
+
+#six img{
+    object-fit: cover;
+    width: 150px;
+}
+
+#nine img{
+    object-fit: cover;
+    width: 120px;
+}
+
+#zero{
+    top: 0px;
+    left: 22%;
+}
+
+#three{
+    top: 26%;
+    right: 0px;
+}
+
+#six{
+    bottom: 0px;
+    left: 22%;
+}
+
+#nine{
+    top: 31%;
+    left: 0px;
+}
